@@ -38,9 +38,35 @@ $ docker run -d -p 80:8000 --env-file .env -v ./app/logs:/app/logs --name fastap
 FastAPI 서버 실행 후, 브라우저에서 EC2 인스턴스의 퍼블릭 IP를 입력하면 기본 라우트에 접속할 수 있습니다.
 
 ```
-http://<EC2_PUBLIC_IP>/
-http://<EC2_PUBLIC_IP>/docs  # Swagger 문서
+http://http://52.79.62.62:8000/
+http://http://52.79.62.62:8000/docs  # Swagger 문서
 ```
+
+### 결과사진
+<img width="1424" alt="image" src="https://github.com/user-attachments/assets/2355d6d3-d36f-4469-995c-d0283b42fa96" />
+<img width="1424" alt="image" src="https://github.com/user-attachments/assets/4f743132-6613-428b-b30c-2bc02ee0afc8" />
+
+
+
+
 
 ### 🛠 트러블슈팅 & 향후 개선
 
+### 1) RDS 연결 오류
+#### 원인
+- MySQL RDS 엔드포인트 연결 실패
+- DB 미생성
+- 보안그룹 인바운드 허용 안함
+
+#### 해결방법
+- MySQL 접속 후 DB 생성
+
+### 2) 모듈 ImportError
+#### 원인
+- FastAPI 구조에서 상대경로 import 문제
+
+#### 해결방법
+- app 디렉토리 기준으로 import 경로 수정
+
+#### 향후 개선
+GitHub Actions통한 자동화

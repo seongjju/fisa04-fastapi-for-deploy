@@ -46,6 +46,9 @@ http://http://52.79.62.62:8000/docs  # Swagger 문서
 <img width="1424" alt="image" src="https://github.com/user-attachments/assets/2355d6d3-d36f-4469-995c-d0283b42fa96" />
 <img width="1424" alt="image" src="https://github.com/user-attachments/assets/4f743132-6613-428b-b30c-2bc02ee0afc8" />
 
+#### 로그 확인
+<img width="803" alt="image" src="https://github.com/user-attachments/assets/4d055113-609a-4b00-a7ce-054c93c3798a" />
+
 
 
 
